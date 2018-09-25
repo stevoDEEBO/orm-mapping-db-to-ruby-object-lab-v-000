@@ -107,7 +107,7 @@ class Student
     end
   end
 
-  def self.first_students_in_grade_10
+  def self.first_student_in_grade_10
     # retrieve all the rows from the first "Student" in grade 10 in the database
     # remember each row should be a new instance of the Student class
     sql <<-SQL
