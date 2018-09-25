@@ -92,14 +92,14 @@ class Student
     end
   end
 
-  def self.first_X_students_in_grade_10(x)
+  def self.first_X_students_in_grade_10(X)
     # retrieve all the rows from the first X "Students" in grade 10 in the database
     # remember each row should be a new instance of the Student class
     sql = <<-SQL
       SELECT *
       FROM students
       WHERE grade = 10
-      LIMIT ?
+      LIMIT X
     SQL
 
     DB[:conn].execute(sql).map do |row|
