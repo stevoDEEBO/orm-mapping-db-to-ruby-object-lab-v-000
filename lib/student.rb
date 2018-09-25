@@ -54,7 +54,7 @@ class Student
   def self.all
     # retrieve all the rows from the "Students" database
     # remember each row should be a new instance of the Student class
-    sql <<-SQL
+    sql = <<-SQL
       SELECT *
       FROM students
     SQL
@@ -67,7 +67,7 @@ class Student
   def self.all_students_in_grade_9
     # retrieve all the rows from the "Students" in grade 9 in the database
     # remember each row should be a new instance of the Student class
-    sql <<-SQL
+    sql = <<-SQL
       SELECT *
       FROM students
       WHERE grade = 9
@@ -81,7 +81,7 @@ class Student
   def self.students_below_12th_grade
     # retrieve all the rows from the "Students" in grade 9, 10m & 11 in the database
     # remember each row should be a new instance of the Student class
-    sql <<-SQL
+    sql = <<-SQL
       SELECT *
       FROM students
       WHERE grade < 12
@@ -95,7 +95,7 @@ class Student
   def self.first_X_students_in_grade_10(x)
     # retrieve all the rows from the first X "Students" in grade 10 in the database
     # remember each row should be a new instance of the Student class
-    sql <<-SQL
+    sql = <<-SQL
       SELECT *
       FROM students
       WHERE grade = 10
@@ -110,7 +110,7 @@ class Student
   def self.first_student_in_grade_10
     # retrieve all the rows from the first "Student" in grade 10 in the database
     # remember each row should be a new instance of the Student class
-    sql <<-SQL
+    sql = <<-SQL
       SELECT *
       FROM students
       WHERE grade = 10
@@ -125,7 +125,7 @@ class Student
   def self.all_students_in_grade_X(x)
     # retrieve all the rows from the "Students" in grade X in the database
     # remember each row should be a new instance of the Student class
-    sql <<-SQL
+    sql = <<-SQL
       SELECT *
       FROM students
       WHERE grade = x
